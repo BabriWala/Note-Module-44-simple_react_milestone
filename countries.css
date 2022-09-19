@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 50px;
+}
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.country{
+    border: 10px solid salmon;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+}
+.country-image{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.rest-countries-common{
+    text-align: center;
+    margin-bottom: 20px;
+}
