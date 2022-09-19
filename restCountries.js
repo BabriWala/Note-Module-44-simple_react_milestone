@@ -7,7 +7,7 @@ const loadData = url =>{
 }
 
 const displayData = countries => {
-    // console.log(countries);
+    // console.l0og(countries);
     // const countriesHTML = countries.map( country => country.name.common )
     const countriesHTML = countries.map( country => displayInUi(country) )
     // console.log(countriesHTML);
