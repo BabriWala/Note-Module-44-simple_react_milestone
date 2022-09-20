@@ -16,16 +16,44 @@ const displayData = countries => {
 }   
 
 
-
-
-const displayInUi = country => { 
+// option Three
+const displayInUi = ({name, flags}) => { 
+    console.log(flags);
     return (`
             <div class='country'>
-                <img class="country-image" src="${country.flags.png}">
-                <h4>Country Name: ${country.name.common}</h4>
+                <img class="country-image" src="${flags.png}">
+                <h4>Country Name: ${name.common}</h4>
             </div>
     `
     )
 }
+
+
+
+// // option Two
+// const displayInUi = country => { 
+//     const {name, flags} = country;
+//     // console.log(name, flags);
+//     return (`
+//             <div class='country'>
+//                 <img class="country-image" src="${flags.png}">
+//                 <h4>Country Name: ${name.common}</h4>
+//             </div>
+//     `
+//     )
+// }
+
+
+
+// option one (original)
+// const displayInUi = country => { 
+//     return (`
+//             <div class='country'>
+//                 <img class="country-image" src="${country.flags.png}">
+//                 <h4>Country Name: ${country.name.common}</h4>
+//             </div>
+//     `
+//     )
+// }
 
 loadData(URL);
